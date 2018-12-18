@@ -1,19 +1,21 @@
 module.exports = {
-  extends: "airbnb-base",
   env: {
-    mocha: true
+    browser: true,
+    es6: true
   },
+  extends: ["eslint:recommended", "plugin:react/recommended"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2018,
+    sourceType: "module"
+  },
+  plugins: ["react"],
   rules: {
-    "no-unused-vars": [
-      1,
-      {
-        argsIgnorePattern: "Promise|res|next|^err"
-      }
-    ],
-    camelcase: 0,
-    "func-names": 0,
-    "arrow-body-style": ["warn"],
-    "no-param-reassign": 0,
-    "prefer-promise-reject-errors": 0
+    indent: ["error", "tab"],
+    "linebreak-style": ["error", "unix"],
+    quotes: ["error", "single"],
+    semi: ["error", "always"]
   }
 };
