@@ -5,10 +5,6 @@ import Form from './components/Form';
 import Data from './components/Data';
 
 class App extends Component {
-	state = {
-		currentUrl: ''
-	};
-
 	render() {
 		return (
 			<div className="App">
