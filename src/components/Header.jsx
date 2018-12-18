@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react';
 
 const Header = () => {
-  return (
-    <div>
-      <h1>I am the real header</h1>
-      <p>Paragraph component</p>
-    </div>
-  );
+	console.log('OH HAI');
+	return (
+		<div>
+			<h1>I am the false header</h1>
+			<p>Paragraph component</p>
+		</div>
+	);
 };
 
 export default Header;
